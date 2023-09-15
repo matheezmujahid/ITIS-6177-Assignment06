@@ -61,7 +61,7 @@
     }
 
     function getPosts() {
-        return axios.get('http://localhost:3004/posts')
+         axios.get('http://localhost:3004/posts')
         .then(function (response) {
             const list = document.getElementById('list');
             if (response && response.data) {
@@ -75,7 +75,7 @@
             console.log(error);
         });
     }
-
+   
     getPosts();
 </script>
 
